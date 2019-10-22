@@ -6,7 +6,4 @@ describe('Bubble Sort', function(){
     it('sorts an array', function(){
         expect( bubbleSort([7, 3, 1, 9, 2]) ).toEqual( [1, 2, 3, 7, 9] );
       });
-    it('sorts an array', function(){
-      expect( bubbleSort([7, 3, 1, 9, 2]) ).toEqual( [1, 2, 3, 7, 9] );
-    });
   });
