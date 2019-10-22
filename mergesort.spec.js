@@ -13,3 +13,9 @@ describe('Merge Array Function', function () {
         expect(merge([[3], [1]])).toEqual([1, 3])
     })
 })
+
+describe('Merge & Sort Array Function', function () {
+    it('it returns a correctly sorted array', function () {
+        expect(mergeSort([3, 5, 7, 2, 44, 55, 22, 455])).toEqual([2, 3, 5, 7, 22, 44, 55, 455])
+    })
+})

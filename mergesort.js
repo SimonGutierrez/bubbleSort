@@ -13,9 +13,20 @@ function merge(arr) {
     for (let i = 0; i < total; i++) {
         if (left[0] < right[0] || !right.length) {
             result.push(left.shift())
-        } else (
+        } else {(
             result.push(right.shift())
-        )
-        console.log(result)
+        )}
     }
+
+    return result
 }
+
+function mergeSort(array) {
+    if (array.length === 1) {
+        return array;
+    } else {
+         let left = split(array)[0];
+         let right = split(array)[1];
+         return merge([mergeSort(left), mergeSort(right)] )
+    }
+  }
